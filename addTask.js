@@ -74,7 +74,7 @@ function loadData() {
         });
     }
 
-    // const storedListData = localStorage.getItem("listData");
+    const storedListData = localStorage.getItem("listData");
     if (storedListData) {
         const listData = JSON.parse(storedListData);
         const containers = document.querySelectorAll(".taskContainer");
