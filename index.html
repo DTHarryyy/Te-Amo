@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--REMIXICON CDN-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!--FONT LINKS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+    </style>
+    
+    <!--CSS LINKS-->
+    <link rel="stylesheet" href="assets/css/general.css ">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/otherWeb.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <link rel="stylesheet" href="assets/css/notif.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="loadingCon">
+        <div class="building-blocks">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+          
+    </div>
+    <nav>
+        <div class="left">
+            <div class="logo">
+                <a href="index.html">TE AMO</a>
+            </div>
+            <div class="line"></div>
+            <i class="ri-moon-line"></i>
+        </div>
+        <div class="right">
+            <div class="navIcons">
+                <i class="ri-question-line hideOnMobile"></i>
+                <i class="ri-search-2-line hideOnMobile"></i>
+                <i class="ri-notification-3-line hideOnMobile" onclick="showNotif()"></i>
+                <i class="ri-arrow-down-wide-fill hideOnDesktop"></i>
+            </div>
+            <div class="otherWeb">
+                <i class="ri-apps-2-add-line otherSites"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <aside>
+        <div class="sideIconsCon">
+            <i class="ri-add-fill"></i>
+        </div>
+        <div class="sideIconsCon" onclick="displaySection()">
+            <i class="ri-layout-column-line hideDisplay"></i>
+        </div>
+        <div class="displaySec">
+            <button class="oneBtn">1</button>
+            <button class="twoBtn">2</button>
+            <button class="threeBtn">3</button>
+        </div>
+        <div class="sideIconsCon">
+            <input type="color" id="colorBox" value="#ffff">
+        </div>
+        <div class="sideIconsCon">
+            <input type="color" id="colorBox2" value="#ffff">
+        </div>
+   </aside>
+    <main>
+        <div class="notificationCon">
+            <div class="notifHeader">
+                <h1>Notifications</h1>
+                <i class="ri-close-fill" onclick="closeNotif()"></i>
+            </div>
+            <div class="seperators"></div>
+            <ul>
+                <li>Believe you can and you're halfway there.</li>
+                <li>I'am so proud of you!</li>
+                <li>Galingan mo always Ms.Mon soon to be pharmacist</li>
+                <li>Iknow you can you it!</li>
+                <li>All your hard work will soon pays off.</li>
+                <li>Always remember there's always someone that is so proud of you</li>
+                <li>You're doing good, keep up the Good Work and galingan mo pa lalo sa lahat</li>
+            </ul>
+        </div>
+        <section id="mainContents">
+            <div class="taskContainer">
+                <div class="header">
+                    <h1 contenteditable="true" class="textHeader" spellcheck="false">Glayza</h1>
+                    <span class="taskCounter">0</span>
+                </div>
+                <div class="seperators"></div>
+                <ul class="listOfTask">
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <i class="ri-add-line taskClicked" ></i>
+                </ul>
+            </div>
+
+            <div class="taskContainer">
+                <div class="header">
+                    <h1 contenteditable="true" class="textHeader" spellcheck="false">Alonzo</h1>
+                    <span class="taskCounter">0</span>
+                </div>
+                <div class="seperators"></div>
+                <ul class="listOfTask">
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <li>
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    
+                    <i class="ri-add-line taskClicked" ></i>
+                </ul>
+            </div>
+            
+            <div class="taskContainer">
+                <div class="header">
+                    <h1 contenteditable="true" class="textHeader" spellcheck="false">Mon</h1>
+                    <span class="taskCounter">0</span>
+                </div>
+                <div class="seperators"></div>
+                <ul class="listOfTask">
+                    <li > 
+                        <p contenteditable="true">This is an editable list item.</p>
+                        <i class="ri-close-line removeTask"></i>
+                    </li>
+                    <i class="ri-add-line taskClicked" ></i>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="otherWebSec">
+            <div>
+                <a href="https://www.ilovepdf.com/pdf_to_word">
+                    Pdf to word
+                </a>
+            </div>
+            <div>
+                <a href="https://www.imagetotext.info/">
+                    Image to text
+                </a>
+            </div>
+            <div>
+                <a href="https://picwish.com/ai-image-upscaler">
+                    Image enhancer
+                </a>
+            </div>
+            <div>
+                <a href="https://www.ilovepdf.com/pdf_to_powerpoint">
+                    pdf to powerpoit
+                </a>
+            </div>
+            <div>
+                <a href="https://www.veed.io/tools/ai-image-generator/text-to-image">
+                    text to image
+                </a>
+            </div>
+            <div>
+                <a href="https://www.ilovepdf.com/powerpoint_to_pdf">
+                    powerpoint to pdf
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="addTask.js"></script>
+    <script src="otherSites.js"></script>
+    <script src="colorPicker.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.notificationCon{
+    background-color: var(--white);
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    padding: 10px;
+    box-sizing: content-box;
+    display: none;
+}
+.notifHeader{
+    height: fit-content;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.notifHeader i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 1.2rem;
+}
+.notifHeader h1{
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 800;
+}
+.notificationCon ul{
+    list-style: none;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: .9rem;
+}
+.notificationCon ul li{
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-left: 2.5px solid var(--purple);
+}
+.notificationCon .seperators{
+    border: 1px solid var(--purple);
+}
+.notificationCon ul li:nth-child(3n-2){
+    border-color: var(--purple);
+}
+.notificationCon ul li:nth-child(3n+0){
+    border-color: rgb(60, 252, 60);
+}
+.notificationCon ul li:nth-child(3n-1){
+    border-color: rgb(231, 28, 55);
+}
