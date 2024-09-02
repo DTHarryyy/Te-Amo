@@ -33,12 +33,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 
 $(".displaySec").on("click", (e)=>{
-    let deviceWidth = window.innerWidth;
-
-    const one = document.querySelector(".oneBtn")
-    const two = document.querySelector(".twoBtn")
-    const three = document.querySelector(".threeBtn")
-
     const taskCon1 = document.querySelectorAll(".taskContainer")[0];
     const taskCon2 = document.querySelectorAll(".taskContainer")[1];
     const taskCon3 = document.querySelectorAll(".taskContainer")[2];
